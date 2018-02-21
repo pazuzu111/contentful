@@ -1,14 +1,28 @@
+*{
+  font-family:Calibri;
+}
+.bgcolor {
+background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-body {
-
-  background: #3E5151;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color:white;
 }
 
 img {
     height:250px;
     width:100%;
+}
+
+.imgback {
+  height:600px;
+  background: no-repeat url('https://images.pexels.com/photos/115553/pexels-photo-115553.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  background-size: cover;
+  background-position: bottom;
+
+}
+
+nav {
+  background-color: transparent;
 }
 

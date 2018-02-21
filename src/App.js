@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 //import contentful
-const contentful = require('contentful')
+import * as contentful from 'contentful'
 
 
 export default class App extends Component {
@@ -45,7 +45,7 @@ export default class App extends Component {
 
       let nav = <div className='navbar-fixed'>
                   <nav>
-                    <div className="nav-wrapper">
+                    <div className="nav-wrapper transparent">
                       <a href="#!" className="brand-logo">NYCL</a>
                       <ul className="right hide-on-med-and-down">
                         <li><a href="sass.html">Sass</a></li>
@@ -58,10 +58,13 @@ export default class App extends Component {
 
     return (
         <div>
-          {nav}
-
-          <div className="row container">
-          {posts}
+          <div className="imgback">
+            {nav}
+          </div>
+          <div className="bgcolor">
+            <div className="row container">
+              {posts}
+            </div>
           </div>
         </div>
     )
