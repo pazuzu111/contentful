@@ -32,12 +32,12 @@ export default class App extends Component {
       let posts =
                   this.state.posts.map((x,i) => {
                     return (
-                        <div key={i} className="col s8">
-                            <h1>{x.fields.title}</h1>
-                            <img  className="responsive-img z-depth-4"
-                                  src={x.fields.image.fields.file.url}
-                                  alt={x.fields.title} />
-                            <h4>{x.fields.body}</h4>
+                        <div key={i} className="col s4 ">
+                            <h3>{x.fields.title}</h3>
+                            <img className="responsive-img z-depth-4"
+                                 src={x.fields.image.fields.file.url}
+                                 alt={x.fields.title} />
+                            <h5>{x.fields.body}</h5>
                             <h6>{x.fields.publishDate}</h6>
                         </div>
                     )
@@ -48,8 +48,8 @@ export default class App extends Component {
                     <div className="nav-wrapper transparent">
                       <a href="#!" className="brand-logo">NYCL</a>
                       <ul className="right hide-on-med-and-down">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="sass.html">About</a></li>
+                        <li><a href="badges.html">Contact</a></li>
                       </ul>
                     </div>
                   </nav>
